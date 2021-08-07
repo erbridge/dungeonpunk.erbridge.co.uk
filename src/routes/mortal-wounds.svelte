@@ -156,7 +156,7 @@
 	</section>
 
 	<section>
-		<h2>the conversion</h2>
+		<h2>converting other rules</h2>
 
 		<p>For every 4 HP a creature had, give that creature 1 maximum Wound.</p>
 
