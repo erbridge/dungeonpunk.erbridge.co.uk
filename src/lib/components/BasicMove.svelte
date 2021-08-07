@@ -2,6 +2,7 @@
 	export let name: string;
 </script>
 
-<h3>basic move: {name}</h3>
-
-<slot />
+<section>
+	<h3>basic move: {name}</h3>
+	<slot />
+</section>
