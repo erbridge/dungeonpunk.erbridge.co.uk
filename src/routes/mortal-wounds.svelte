@@ -14,7 +14,7 @@
 	</h1>
 
 	<section>
-		<h2>the introduction</h2>
+		<h2>what’s this?</h2>
 
 		<p>
 			This is a hack for <a
