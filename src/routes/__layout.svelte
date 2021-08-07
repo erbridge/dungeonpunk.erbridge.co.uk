@@ -1,6 +1,8 @@
 <slot />
 
 <style global>
+	@import 'normalize.css';
+
 	:root {
 		font-family: 'Eczar', serif;
 	}
