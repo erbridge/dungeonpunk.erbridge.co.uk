@@ -35,4 +35,22 @@
 	a {
 		color: #405688;
 	}
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	ul li::before {
+		content: '➶';
+		margin-right: 0.5em;
+	}
+
+	li ul {
+		padding-left: 1.3em;
+	}
+
+	li ul li::before {
+		content: '➵';
+	}
 </style>
