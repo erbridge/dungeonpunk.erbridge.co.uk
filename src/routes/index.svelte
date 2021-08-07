@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+	<title>dungeonpunk</title>
+</svelte:head>
+
+<h1>dungeonpunk hacks</h1>
+
+<ul>
+	<li><a href="mortal-wounds">mortal wounds</a></li>
+</ul>
