@@ -26,4 +26,8 @@
 		font-family: 'Eczar', serif;
 		font-size: 1.5em;
 	}
+
+	a {
+		color: #405688;
+	}
 </style>
