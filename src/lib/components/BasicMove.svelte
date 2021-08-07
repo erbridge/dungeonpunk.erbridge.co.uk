@@ -12,6 +12,10 @@
 </section>
 
 <style>
+	section {
+		break-inside: avoid;
+	}
+
 	h3[data-replace] {
 		margin-bottom: 0;
 	}

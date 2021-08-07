@@ -32,9 +32,14 @@
 		text-decoration: none;
 	}
 
+	h2 {
+		break-before: page;
+	}
+
 	h2,
 	h3 {
 		margin-bottom: 0;
+		break-after: avoid;
 	}
 
 	h2 + p,
@@ -67,8 +72,21 @@
 
 	@media print {
 		:root {
+			height: 210mm;
+			width: 148mm;
+			padding: 0;
 			background: white;
 			color: black;
+			font-size: 24px;
+		}
+
+		body {
+			max-width: 100%;
+		}
+
+		h1 {
+			margin-top: 30vh;
+			break-after: page;
 		}
 
 		a {
