@@ -26,10 +26,10 @@
 		</p>
 
 		<p>
-			In dungeonpunk, damage is represented by Hit Points (HP). As you take damage, you lose HP, and
-			when you have 0 HP or less remaining, you fall unconscious or die. This hack replaces that
-			concept with Wounds and leans on the existing concept of Stress, an abstraction for physical
-			and mental exhaustion.
+			Normally in dungeonpunk, damage is represented by <strong>Hit Points (HP)</strong>. As you
+			take damage, you lose HP, and when you have 0 HP or less remaining, you fall unconscious or
+			die. This hack replaces that concept with <strong>Wounds</strong> and leans on the existing
+			concept of <strong>Stress</strong>, an abstraction for physical and mental exhaustion.
 		</p>
 
 		<p>
@@ -51,8 +51,9 @@
 		<h2>creating a character</h2>
 
 		<p>
-			When creating a character, instead of HP, you have 1+CON maximum Wounds. Whenever your CON
-			changes, so does your maximum Wounds. Otherwise create your character as normal.
+			When creating a character, instead of HP, you have <strong>1+CON maximum Wounds</strong>.
+			Whenever your CON changes, so does your maximum Wounds. Otherwise create your character as
+			normal.
 		</p>
 	</section>
 
@@ -61,23 +62,24 @@
 
 		<BasicMove name="carry" replace>
 			<p>
-				When you carry gear and Stress that exceeds 12+CON+WIS Weight, you become encumbered. While
-				encumbered, you receive a -1 dice penalty to all rolls and cannot push yourself, assist
-				others, or use any move that could make you gain Stress.
+				When you <strong>carry gear and Stress that exceeds 12+CON+WIS Weight</strong>, you become
+				encumbered. While encumbered, you receive a -1 dice penalty to all rolls and cannot push
+				yourself, assist others, or use any move that could make you gain Stress.
 			</p>
 		</BasicMove>
 
 		<BasicMove name="rest" replace>
 			<p>
-				When you take time to rest and recover, you lose 1d3 Stress for each hour you spend doing
-				so.
+				When you take time to <strong>rest and recover</strong>, you lose 1d3 Stress for each hour
+				you spend doing so.
 			</p>
 		</BasicMove>
 
 		<BasicMove name="damage" replace>
 			<p>
-				When you successfully hurt something or are hurt by something, gain the listed Wounds or
-				give the listed Wounds to the target, as relevant:
+				When you <em>successfully</em> <strong>hurt something</strong> or
+				<strong>are hurt by something</strong>, gain the listed Wounds or give the listed Wounds to
+				the target, as relevant:
 			</p>
 			<ul>
 				<li>Minor damage: 0 (bumps, cuts, bruises)</li>
@@ -87,18 +89,18 @@
 				<li>Catastrophic damage: 4 (capable of destroying a house)</li>
 			</ul>
 			<p>
-				Worn armour reduces physical damage taken by Wounds equal to its weight. If armour absorbs
-				any incoming damage it becomes dented, cracked, damaged, or destroyed, reducing its
-				effectiveness by the number of Wounds it absorbed.
+				Worn <strong>armour</strong> reduces physical damage taken by Wounds equal to its weight. If
+				armour absorbs <strong>any</strong> incoming damage it becomes dented, cracked, damaged, or destroyed,
+				reducing its effectiveness by the number of Wounds it absorbed.
 			</p>
 		</BasicMove>
 
 		<BasicMove name="collapse" replace>
-			<p>When you reach your maximum Wounds, you fall unconscious.</p>
+			<p>When you <strong>reach your maximum Wounds</strong>, you fall unconscious.</p>
 		</BasicMove>
 
 		<BasicMove name="die" replace>
-			<p>When you exceed your maximum Wounds, roll FATE.</p>
+			<p>When you <strong>exceed your maximum Wounds</strong>, roll FATE.</p>
 			<MoveResults>
 				<span slot="success">You fall unconscious.</span>
 				<span slot="twist">The GM presents an opportunity to survive, but at a cost.</span>
@@ -108,8 +110,10 @@
 
 		<BasicMove name="avoid damage">
 			<p>
-				When you would be hurt by something and the source of that hurt can be dodged, deflected, or
-				otherwise avoided, gain the listed Stress, as relevant, instead of taking any Wounds:
+				When you <strong
+					>would be hurt by something and the source of that hurt can be dodged, deflected, or
+					otherwise avoided</strong
+				>, gain the listed Stress, as relevant, instead of taking any Wounds:
 			</p>
 			<ul>
 				<li>Minor damage: 1 (bumps, cuts, bruises)</li>
@@ -119,15 +123,15 @@
 				<li>Catastrophic damage: 4d6 (capable of destroying a house)</li>
 			</ul>
 			<p>
-				Using a wielded weapon or shield to deflect physical damage reduces the Stress caused by an
-				amount equal to its weight.
+				Using a <strong>wielded weapon</strong> or <strong>shield</strong> to deflect physical damage
+				reduces the Stress caused by an amount equal to its weight.
 			</p>
 		</BasicMove>
 
 		<BasicMove name="let something go">
 			<p>
-				When you need to drop something in a hurry, such as if you are encumbered and under attack,
-				roll FATE.
+				When you need to <strong>drop something in a hurry</strong>, such as if you are encumbered
+				and under attack, roll FATE.
 			</p>
 			<MoveResults>
 				<span slot="success"
@@ -144,8 +148,9 @@
 
 		<BasicMove name="tend to wounds">
 			<p>
-				When you take time to patch yourself up or have someone patch you up and you rest, you lose
-				1 Wound for each day you spend doing so.
+				When you take time to <strong>patch yourself up</strong> or
+				<strong>have someone patch you up</strong>
+				and you <strong>rest</strong>, you lose 1 Wound for each day you spend doing so.
 			</p>
 		</BasicMove>
 	</section>
