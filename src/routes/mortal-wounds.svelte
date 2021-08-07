@@ -8,7 +8,7 @@
 
 <main>
 	<h1>
-		dungeonpunk
+		<a href="..">dungeonpunk</a>
 		<div>mortal wounds</div>
 	</h1>
 

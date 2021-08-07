@@ -27,6 +27,11 @@
 		font-size: 1.5em;
 	}
 
+	h1 a {
+		color: inherit;
+		text-decoration: none;
+	}
+
 	a {
 		color: #405688;
 	}
