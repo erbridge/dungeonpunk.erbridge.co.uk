@@ -1,3 +1,7 @@
+<script lang="ts">
+	import BasicMove from '$lib/components/BasicMove.svelte';
+</script>
+
 <svelte:head>
 	<title>dungeonpunk: mortal wounds</title>
 </svelte:head>
@@ -41,94 +45,96 @@
 	changes, so does your maximum Wounds. Otherwise create your character as normal.
 </p>
 
-<h3>basic move: carry</h3>
+<BasicMove name="carry">
+	<p>
+		When you carry gear and Stress that exceeds 12+CON+WIS Weight, you become encumbered. While
+		encumbered, you receive a -1 dice penalty to all rolls and cannot push yourself, assist others,
+		or use any move that could make you gain Stress.
+	</p>
+</BasicMove>
 
-<p>
-	When you carry gear and Stress that exceeds 12+CON+WIS Weight, you become encumbered. While
-	encumbered, you receive a -1 dice penalty to all rolls and cannot push yourself, assist others, or
-	use any move that could make you gain Stress.
-</p>
+<BasicMove name="rest">
+	<p>
+		When you take time to rest and recover, you lose 1d3 Stress for each hour you spend doing so.
+	</p>
+</BasicMove>
 
-<h3>basic move: rest</h3>
+<BasicMove name="damage">
+	<p>
+		When you successfully hurt something or are hurt by something, gain the listed Wounds or give
+		the listed Wounds to the target, as relevant:
+	</p>
+	<ul>
+		<li>Minor damage: 0 (bumps, cuts, bruises)</li>
+		<li>Standard damage: 1 (an attack with a weapon)</li>
+		<li>Serious damage: 2 (incapacitation or maiming)</li>
+		<li>Deadly damage: 3 (death)</li>
+		<li>Catastrophic damage: 4 (capable of destroying a house)</li>
+	</ul>
+	<p>
+		Worn armour reduces physical damage taken by Wounds equal to its weight. If armour absorbs any
+		incoming damage it becomes dented, cracked, damaged, or destroyed, reducing its effectiveness by
+		the number of Wounds it absorbed.
+	</p>
+</BasicMove>
 
-<p>When you take time to rest and recover, you lose 1d3 Stress for each hour you spend doing so.</p>
+<BasicMove name="collapse">
+	<p>When you reach your maximum Wounds, you fall unconscious.</p>
+</BasicMove>
 
-<h3>basic move: damage</h3>
-
-<p>
-	When you successfully hurt something or are hurt by something, gain the listed Wounds or give the
-	listed Wounds to the target, as relevant:
-</p>
-<ul>
-	<li>Minor damage: 0 (bumps, cuts, bruises)</li>
-	<li>Standard damage: 1 (an attack with a weapon)</li>
-	<li>Serious damage: 2 (incapacitation or maiming)</li>
-	<li>Deadly damage: 3 (death)</li>
-	<li>Catastrophic damage: 4 (capable of destroying a house)</li>
-</ul>
-<p>
-	Worn armour reduces physical damage taken by Wounds equal to its weight. If armour absorbs any
-	incoming damage it becomes dented, cracked, damaged, or destroyed, reducing its effectiveness by
-	the number of Wounds it absorbed.
-</p>
-
-<h3>basic move: collapse</h3>
-
-<p>When you reach your maximum Wounds, you fall unconscious.</p>
-
-<h3>basic move: die</h3>
-
-<p>When you exceed your maximum Wounds, roll FATE.</p>
-<ul>
-	<li>On a success: You fall unconscious.</li>
-	<li>On a twist: The GM presents an opportunity to survive, but at a cost.</li>
-	<li>On a failure: You die.</li>
-</ul>
+<BasicMove name="die">
+	<p>When you exceed your maximum Wounds, roll FATE.</p>
+	<ul>
+		<li>On a success: You fall unconscious.</li>
+		<li>On a twist: The GM presents an opportunity to survive, but at a cost.</li>
+		<li>On a failure: You die.</li>
+	</ul>
+</BasicMove>
 
 <h2>the new</h2>
 
-<h3>basic move: avoid damage</h3>
+<BasicMove name="avoid damage">
+	<p>
+		When you would be hurt by something and the source of that hurt can be dodged, deflected, or
+		otherwise avoided, gain the listed Stress, as relevant, instead of taking any Wounds:
+	</p>
+	<ul>
+		<li>Minor damage: 1 (bumps, cuts, bruises)</li>
+		<li>Standard damage: 1d6 (an attack with a weapon)</li>
+		<li>Serious damage: 2d6 (incapacitation or maiming)</li>
+		<li>Deadly damage: 3d6 (death)</li>
+		<li>Catastrophic damage: 4d6 (capable of destroying a house)</li>
+	</ul>
+	<p>
+		Using a wielded weapon or shield to deflect physical damage reduces the Stress caused by an
+		amount equal to its weight.
+	</p>
+</BasicMove>
 
-<p>
-	When you would be hurt by something and the source of that hurt can be dodged, deflected, or
-	otherwise avoided, gain the listed Stress, as relevant, instead of taking any Wounds:
-</p>
-<ul>
-	<li>Minor damage: 1 (bumps, cuts, bruises)</li>
-	<li>Standard damage: 1d6 (an attack with a weapon)</li>
-	<li>Serious damage: 2d6 (incapacitation or maiming)</li>
-	<li>Deadly damage: 3d6 (death)</li>
-	<li>Catastrophic damage: 4d6 (capable of destroying a house)</li>
-</ul>
-<p>
-	Using a wielded weapon or shield to deflect physical damage reduces the Stress caused by an amount
-	equal to its weight.
-</p>
+<BasicMove name="let something go">
+	<p>
+		When you need to drop something in a hurry, such as if you are encumbered and under attack, roll
+		FATE:
+	</p>
+	<ul>
+		<li>
+			On a success: Choose one:
+			<ul>
+				<li>It’s damaged in the process</li>
+				<li>It rolls, slides, or is kicked away and becomes hard to find or reach later</li>
+				<li>You let your guard down and take damage from a nearby threat</li>
+			</ul>
+		</li>
+		<li>On a twist: Choose two.</li>
+	</ul>
+</BasicMove>
 
-<h3>basic move: let something go</h3>
-
-<p>
-	When you need to drop something in a hurry, such as if you are encumbered and under attack, roll
-	FATE:
-</p>
-<ul>
-	<li>
-		On a success: Choose one:
-		<ul>
-			<li>It’s damaged in the process</li>
-			<li>It rolls, slides, or is kicked away and becomes hard to find or reach later</li>
-			<li>You let your guard down and take damage from a nearby threat</li>
-		</ul>
-	</li>
-	<li>On a twist: Choose two.</li>
-</ul>
-
-<h3>basic move: tend to wounds</h3>
-
-<p>
-	When you take time to patch yourself up or have someone patch you up and you rest, you lose 1
-	Wound for each day you spend doing so.
-</p>
+<BasicMove name="tend to wounds">
+	<p>
+		When you take time to patch yourself up or have someone patch you up and you rest, you lose 1
+		Wound for each day you spend doing so.
+	</p>
+</BasicMove>
 
 <h2>the conversion</h2>
 
