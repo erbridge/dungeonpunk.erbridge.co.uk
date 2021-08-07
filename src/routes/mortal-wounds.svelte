@@ -47,16 +47,18 @@
 	</section>
 
 	<section>
-		<h2>the changes</h2>
-
-		<h3>creating a character</h3>
+		<h2>creating a character</h2>
 
 		<p>
 			When creating a character, instead of HP, you have 1+CON maximum Wounds. Whenever your CON
 			changes, so does your maximum Wounds. Otherwise create your character as normal.
 		</p>
+	</section>
 
-		<BasicMove name="carry">
+	<section>
+		<h2>basic moves</h2>
+
+		<BasicMove name="carry" replace>
 			<p>
 				When you carry gear and Stress that exceeds 12+CON+WIS Weight, you become encumbered. While
 				encumbered, you receive a -1 dice penalty to all rolls and cannot push yourself, assist
@@ -64,14 +66,14 @@
 			</p>
 		</BasicMove>
 
-		<BasicMove name="rest">
+		<BasicMove name="rest" replace>
 			<p>
 				When you take time to rest and recover, you lose 1d3 Stress for each hour you spend doing
 				so.
 			</p>
 		</BasicMove>
 
-		<BasicMove name="damage">
+		<BasicMove name="damage" replace>
 			<p>
 				When you successfully hurt something or are hurt by something, gain the listed Wounds or
 				give the listed Wounds to the target, as relevant:
@@ -90,11 +92,11 @@
 			</p>
 		</BasicMove>
 
-		<BasicMove name="collapse">
+		<BasicMove name="collapse" replace>
 			<p>When you reach your maximum Wounds, you fall unconscious.</p>
 		</BasicMove>
 
-		<BasicMove name="die">
+		<BasicMove name="die" replace>
 			<p>When you exceed your maximum Wounds, roll FATE.</p>
 			<ul>
 				<li>On a success: You fall unconscious.</li>
@@ -102,10 +104,6 @@
 				<li>On a failure: You die.</li>
 			</ul>
 		</BasicMove>
-	</section>
-
-	<section>
-		<h2>the new</h2>
 
 		<BasicMove name="avoid damage">
 			<p>
