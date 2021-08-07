@@ -6,6 +6,7 @@
 <section>
 	<h3 data-replace={replace}>
 		basic move: {name}
+		{#if replace}<span>(replaces original)</span>{/if}
 	</h3>
 	{#if replace}<span>(replaces original)</span>{/if}
 	<slot />
