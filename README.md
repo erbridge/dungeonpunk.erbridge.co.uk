@@ -2,7 +2,7 @@
 
 [dungeonpunk.erbridge.co.uk](https://dungeonpunk.erbridge.co.uk/)
 
-A website of hacks for [dungeonpunk](https://acegiak.itch.io/dungeonpunk) by Ash McAllen, Sidney
+A website of hacks for [dungeonpunk](https://acegiak.itch.io/dungeonpunk) by Ash McAllan, Sidney
 Icarus, and Melody Watson, a fiction-telling game about exploring a fantasy world and going on
 adventures.
 
