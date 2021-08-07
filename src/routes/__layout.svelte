@@ -53,4 +53,16 @@
 	li ul li::before {
 		content: '➵';
 	}
+
+	@media print {
+		:root {
+			background: white;
+			color: black;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
 </style>
