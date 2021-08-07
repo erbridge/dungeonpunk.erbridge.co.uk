@@ -4,10 +4,21 @@
 	@import 'normalize.css';
 
 	:root {
+		padding: 2em;
+		background: #f8ede5;
+		color: #242c43;
 		font-family: 'Eczar', serif;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	body {
+		margin: auto;
+		max-width: 40em;
 	}
 
 	h1 {
+		margin-top: 0;
 		font-family: 'IM Fell English', serif;
 	}
 
