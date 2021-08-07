@@ -137,7 +137,7 @@
 				<span slot="success"
 					>Choose one:
 					<ul>
-						<li>It’s damaged in the process</li>
+						<li>It’s damaged or destroyed in the process</li>
 						<li>It rolls, slides, or is kicked away and becomes hard to find or reach later</li>
 						<li>You let your guard down and take damage from a nearby threat</li>
 					</ul></span
