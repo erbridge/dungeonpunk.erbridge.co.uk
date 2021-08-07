@@ -16,9 +16,10 @@
 		margin-bottom: 0;
 	}
 
-	h3 + span {
-		margin-top: 0;
-		font-size: 0.9em;
+	h3 > span {
+		vertical-align: middle;
+		font-size: 0.7em;
+		font-weight: normal;
 		font-style: italic;
 	}
 </style>
