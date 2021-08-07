@@ -47,7 +47,7 @@
 	}
 
 	li ul {
-		padding-left: 1.3em;
+		margin-left: 1.3em;
 	}
 
 	li ul li::before {
