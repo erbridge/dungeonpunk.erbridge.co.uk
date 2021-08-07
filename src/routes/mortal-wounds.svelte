@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BasicMove from '$lib/components/BasicMove.svelte';
+	import MoveResults from '$lib/components/MoveResults.svelte';
 </script>
 
 <svelte:head>
@@ -98,11 +99,11 @@
 
 		<BasicMove name="die" replace>
 			<p>When you exceed your maximum Wounds, roll FATE.</p>
-			<ul>
-				<li>On a success: You fall unconscious.</li>
-				<li>On a twist: The GM presents an opportunity to survive, but at a cost.</li>
-				<li>On a failure: You die.</li>
-			</ul>
+			<MoveResults>
+				<span slot="success">You fall unconscious.</span>
+				<span slot="twist">The GM presents an opportunity to survive, but at a cost.</span>
+				<span slot="failure">You die.</span>
+			</MoveResults>
 		</BasicMove>
 
 		<BasicMove name="avoid damage">
@@ -126,19 +127,19 @@
 		<BasicMove name="let something go">
 			<p>
 				When you need to drop something in a hurry, such as if you are encumbered and under attack,
-				roll FATE:
+				roll FATE.
 			</p>
-			<ul>
-				<li>
-					On a success: Choose one:
+			<MoveResults>
+				<span slot="success"
+					>Choose one:
 					<ul>
 						<li>It’s damaged in the process</li>
 						<li>It rolls, slides, or is kicked away and becomes hard to find or reach later</li>
 						<li>You let your guard down and take damage from a nearby threat</li>
-					</ul>
-				</li>
-				<li>On a twist: Choose two.</li>
-			</ul>
+					</ul></span
+				>
+				<span slot="twist">Choose two.</span>
+			</MoveResults>
 		</BasicMove>
 
 		<BasicMove name="tend to wounds">
