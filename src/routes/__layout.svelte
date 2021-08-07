@@ -32,6 +32,17 @@
 		text-decoration: none;
 	}
 
+	h2,
+	h3 {
+		margin-bottom: 0;
+	}
+
+	h2 + p,
+	h3 + p,
+	h3:first-child {
+		margin-top: 0;
+	}
+
 	a {
 		color: #405688;
 	}
