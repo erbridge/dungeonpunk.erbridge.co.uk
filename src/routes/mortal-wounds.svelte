@@ -14,6 +14,12 @@
 		<div>mortal wounds</div>
 	</h1>
 
+	<aside class="print-hint">
+		Print this page or <a href="https://erbridge.itch.io/dungeonpunk-mortal-wounds"
+			>download a copy from itch.io</a
+		>!
+	</aside>
+
 	<section>
 		<figure>
 			<img
@@ -186,6 +192,10 @@
 </main>
 
 <style>
+	.print-hint {
+		font-style: italic;
+	}
+
 	figure {
 		margin: 0;
 	}
@@ -216,6 +226,10 @@
 	}
 
 	@media print {
+		.print-hint {
+			display: none;
+		}
+
 		figure > img {
 			margin-top: 7em;
 		}
