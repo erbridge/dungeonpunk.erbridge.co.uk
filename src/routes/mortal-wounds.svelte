@@ -1,6 +1,7 @@
 <script lang="ts">
 	import BasicMove from '$lib/components/BasicMove.svelte';
 	import MoveResults from '$lib/components/MoveResults.svelte';
+	import cover from '$lib/images/mortal-wounds-cover.png';
 </script>
 
 <svelte:head>
@@ -14,6 +15,21 @@
 	</h1>
 
 	<section>
+		<figure>
+			<img
+				src={cover}
+				style="shape-outside: url({cover})"
+				alt="A black woman in armour, fixing the bandage on her wounded leg. Her helmet, gauntlets, and sword lie on the ground beside her."
+			/>
+			<caption
+				>Art by <a
+					href="https://twitter.com/DemortaFantasy"
+					target="_blank"
+					rel="noopener noreferrer">Demorta</a
+				></caption
+			>
+		</figure>
+
 		<h2>what’s this?</h2>
 
 		<p>
@@ -168,3 +184,47 @@
 		<p>For every 1 Stress something removed, make it 1d3 Stress.</p>
 	</section>
 </main>
+
+<style>
+	figure {
+		margin: 0;
+	}
+
+	figure > img,
+	figure > caption {
+		width: 100%;
+	}
+
+	figure > caption {
+		margin-bottom: -2em;
+		float: right;
+		position: relative;
+		top: -2em;
+		text-align: right;
+	}
+
+	@media only screen and (min-width: 30rem) {
+		figure > img,
+		figure > caption {
+			width: 80%;
+		}
+
+		figure > img {
+			shape-margin: 2em;
+			float: right;
+		}
+	}
+
+	@media print {
+		figure > img {
+			margin-top: 7em;
+		}
+
+		figure > caption {
+			margin-bottom: 0;
+			float: none;
+			position: none;
+			top: none;
+		}
+	}
+</style>
