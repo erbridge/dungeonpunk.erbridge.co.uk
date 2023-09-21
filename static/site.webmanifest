@@ -1,0 +1,13 @@
+{
+	"background_color": "#f8ede5",
+	"theme_color": "#242c43",
+	"name": "dungeonpunk hacks",
+	"start_url": "/",
+	"lang": "en-GB",
+	"icons": [
+		{
+			"src": "favicon.png",
+			"sizes": "128x128"
+		}
+	]
+}
